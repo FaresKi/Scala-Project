@@ -27,7 +27,7 @@ object Drone {
     val messageStatusJson: String = Json.toJson(messageStatus).toString()
     val record = new ProducerRecord[String, String](topic(0), messageJson)
     val record_status = new ProducerRecord[String, String](topic(1), messageStatusJson)
-    while (batteryLife > 0) {
+    while (batteryLife != 0) {
       producer.send(record)
       producerHealth.send(record_status)
       val tmp = 0.99 * batteryLife
