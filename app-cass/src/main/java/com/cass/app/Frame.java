@@ -197,7 +197,7 @@ public class Frame extends javax.swing.JFrame {
         Session session;
         session = cluster.connect();
 
-        //request envoy� a cassandra
+        //request envoyé a cassandra
         ResultSet resultset =session.execute("Select Count(*) as total from scala_project.nypd_data where infractionCode='49' ALLOW FILTERING ");
 
         jLabel1.setText("Nombre d'infractions relevées aujourd'hui : ");
