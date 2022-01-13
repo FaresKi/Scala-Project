@@ -1,4 +1,0 @@
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/fareskissoum/Documents/EFREI%20M1/Introduction%20Data%20Engineering/scala-project/Producer_Consumer/"), "producer_consumer")...
-[debug] Done updating ProjectRef(uri("file:/Users/fareskissoum/Documents/EFREI%20M1/Introduction%20Data%20Engineering/scala-project/Producer_Consumer/"), "producer_consumer")
-[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

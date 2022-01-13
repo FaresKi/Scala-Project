@@ -22,12 +22,8 @@ object Producer {
       val messageJson: String = Json.toJson(message).toString()
       val record = new ProducerRecord[String, String](topic, messageJson)
       producer.send(record)
-    }
+      }
     )
-
-    //val messageJson: String = Json.toJson(message).toString()
-    //val record = new ProducerRecord[String, String](topic, "key", messageJson)
-    //producer.send(record)
     producer.close()
   }
 
